@@ -1,6 +1,0 @@
-f=open("census_log_dw.csv","r")
-f2=open("tendays_dw.csv","w")
-fdata = f.readlines()
-f2.writelines("%s" % place for place in ([fdata[0]]+fdata[-40:]))
-f.close()
-f2.close()
