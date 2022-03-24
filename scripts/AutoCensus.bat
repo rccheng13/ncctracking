@@ -1,6 +1,6 @@
 cd c:\python39\user\censusreader
 copy /y census_log.csv census_log.bak
-"c:\python39\python.exe" censuscounter2.py
+"c:\python39\python.exe" censuscounter3.py
 
 copy /y census_log.csv "C:\Users\rc1084\OneDrive - Rutgers University\Documents\NeuroCensus.csv"
 rem copy /y census_log_dw.csv "C:\Users\rc1084\OneDrive - Rutgers University\Documents\NeuroCensus_dw.csv"
@@ -15,4 +15,5 @@ rem sync to github for graphing
 cd ncctracking
 "C:\Program Files\Git\cmd\git.exe" add --all
 "C:\Program Files\Git\cmd\git.exe" commit -m "scheduled push"
-"C:\Program Files\Git\cmd\git.exe" push origin main
+"C:\Program Files\Git\cmd\git.exe" push https://TOKEN@github.com/rccheng13/ncctracking.git main
+rem "C:\Program Files\Git\cmd\git.exe" push origin main
